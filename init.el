@@ -733,18 +733,6 @@
   (setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
   (setq uniquify-ignore-buffers-re "^\\*")) ; don't muck with special buffers
 
-;; Emacs table package
-;; (require 'table)
-
-;; Wikipedia editing
-;; (require 'mediawiki)
-;; (setq mediawiki-site-alist '(("Wikipedia"
-;; 			      "http://en.wikipedia.org/w/"
-;; 			      "Sshenoy"
-;; 			      "1qazxsw2"
-;; 			      "Main Page")))
-;; (setq mediawiki-site "Wikipedia")
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful macros and functions
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -878,8 +866,6 @@
 (global-set-key [delete] 'delete-char)
 (global-set-key [insert] 'yank)
 (global-set-key [(meta tab)] 'other-frame)
-;;(global-set-key [(control shift tab)] (lambda () (interactive)
-;;					(select-frame (previous-frame))))
 (global-set-key [(control kp-home)] 'beginning-of-buffer)
 (global-set-key [(control kp-end)] 'end-of-buffer)
 (global-set-key [(control up)] 'previous-multiframe-window)
